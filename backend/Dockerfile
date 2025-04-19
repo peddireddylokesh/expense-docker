@@ -5,7 +5,6 @@ RUN addgroup -S expense && adduser -S expense -G expense && \
     chown -R expense:expense /opt/backend
 WORKDIR /opt/backend
 ENV DB_HOST="mysql"
-# ENV DB_HOST="localhost"
 USER expense
 COPY package.json .
 COPY *.js  .
